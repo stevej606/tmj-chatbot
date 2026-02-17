@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TMJ Dental Clinic - Demo</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Georgia, serif;
+      color: #333;
+      background: #fafafa;
+    }
+    header {
+      background: #1a3a4a;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { font-size: 1.4rem; }
+    nav a {
+      color: #cde;
+      text-decoration: none;
+      margin-left: 24px;
+    }
+    .hero {
+      background: linear-gradient(135deg, #1a3a4a, #2a6a5a);
+      color: white;
+      padding: 80px 40px;
+      text-align: center;
+    }
+    .hero h2 { font-size: 2.4rem; margin-bottom: 16px; }
+    .hero p { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+    .content {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .content h3 { font-size: 1.5rem; margin-bottom: 12px; color: #1a3a4a; }
+    .content p { line-height: 1.7; margin-bottom: 16px; }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin: 40px auto;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .card h4 { color: #2a6a5a; margin-bottom: 8px; }
+    footer {
+      background: #1a3a4a;
+      color: #aab;
+      text-align: center;
+      padding: 24px;
+      margin-top: 60px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Smile Dental Clinic</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Expert TMJ Care</h2>
+    <p>Comprehensive diagnosis and treatment for temporomandibular joint disorders. Our specialists are here to help you find relief.</p>
+  </div>
+
+  <div class="content">
+    <h3>Understanding TMJ Disorders</h3>
+    <p>The temporomandibular joint connects your jawbone to your skull. TMJ disorders can cause pain in the jaw joint and muscles that control jaw movement. Our team provides personalized treatment plans to address your specific needs.</p>
+    <p>Common symptoms include jaw pain, difficulty chewing, clicking sounds, and locking of the joint. If you're experiencing any of these symptoms, don't hesitate to reach out.</p>
+  </div>
+
+  <div class="services">
+    <div class="card">
+      <h4>Diagnosis</h4>
+      <p>Thorough examination and imaging to identify the root cause of your TMJ issues.</p>
+    </div>
+    <div class="card">
+      <h4>Physical Therapy</h4>
+      <p>Targeted exercises and manual therapy to restore jaw function and reduce pain.</p>
+    </div>
+    <div class="card">
+      <h4>Night Guards</h4>
+      <p>Custom-fitted oral appliances to protect your teeth and reduce jaw clenching.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 Smile Dental Clinic. This is a demo page.
+  </footer>
+
+  <!-- TMJ Chat Widget - just this one line! -->
+  <script src="http://localhost:3001/widget.js" data-tmj-server="http://localhost:3001"></script>
+</body>
+</html>
